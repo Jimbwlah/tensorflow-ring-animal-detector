@@ -1,0 +1,45 @@
+item {
+  id: 1
+  name: 'fox'
+}
+
+item {
+  id: 2
+  name: 'badger'
+}
+
+item {
+  id: 3
+  name: 'person'
+}
+
+item {
+  id: 4
+  name: 'cat'
+}
+
+item {
+  id: 5
+  name: 'bird'
+}
+
+item {
+  id: 6
+  name: 'swing'
+}
+
+item {
+  id: 7
+  name: 'robomower'
+}
+
+item {
+  id: 8
+  name: 'squirrel'
+}
+
+item {
+  id: 9
+  name: 'dog'
+}
+

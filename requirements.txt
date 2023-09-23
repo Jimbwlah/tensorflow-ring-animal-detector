@@ -1,0 +1,4 @@
+pyyaml==5.3
+src/models/research/
+paho-mqtt
+keyboard

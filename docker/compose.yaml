@@ -1,0 +1,31 @@
+services:
+  ring-mqtt:
+    container_name: ring-mqtt
+    restart: unless-stopped
+    image: tsightler/ring-mqtt
+    depends_on:
+      - ring-mqtt-broker
+    ports:
+      - 8554:8554                      # Enable RTSP port for external media player access
+    volumes:
+      - ./ring-mqtt:/data           # Mapping of local folder to provide persistent storage
+    logging:                                        #limit logs to 10m and 3 files
+      options:
+        max-size: 10m
+        max-file: "3"
+    networks:
+      - default
+
+  ring-mqtt-broker:
+    image: eclipse-mosquitto
+    hostname: mosquitto-broker
+    container_name: ring-mqtt-broker
+    networks:
+      - default
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto-config:/mosquitto/config
+
+networks:
+  default:

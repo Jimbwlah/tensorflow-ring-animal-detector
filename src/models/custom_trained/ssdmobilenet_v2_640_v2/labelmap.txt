@@ -1,0 +1,9 @@
+fox
+badger
+person
+cat
+bird
+swing
+robomower
+squirrel
+dog
