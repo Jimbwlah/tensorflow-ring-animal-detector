@@ -8,7 +8,7 @@ import constants
 video_fname = constants.VIDEO_ANALYSIS_TEST_VIDEO_FILENAME
 
 TFVideoAnalysis(
-    video_url_or_filename=os.path.join(os.getcwd(),f"training-content/test-video/{video_fname}"), 
+    video_url_or_filename=os.path.join(os.getcwd(),f"src/test-video/{video_fname}"), 
     camera_name="Local Test",
     video_file_analysis=True,
     mqtt_client=None,

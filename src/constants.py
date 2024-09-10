@@ -2,7 +2,7 @@
 
 ##### DETECTION OPTIONS #####
 
-MODEL_LOCATION = "src\models\custom_trained\ssdmobilenet_v2_640_V2"
+MODEL_LOCATION = "src\models\custom_trained\ssdmobilenet_v2_320"
 DETECT_TF_FILENAME = "detect.tflite"
 LABEL_MAP_FILENAME = "training-content\labelmap.txt"
 DETECTION_ACCURACY_THRESHOLD = 0.6 # 60%
@@ -13,7 +13,7 @@ VIDEO_ANALYSIS_FPS_MAX = 10 # Streamed RTSP FPS
 VIDEO_ANALYSIS_FILE_FPX_MAX = 24 # Local video file FPS
 VIDEO_ANALYSIS_ANIMAL_FILTER = ['fox', 'badger']
 
-VIDEO_ANALYSIS_TEST_VIDEO_FILENAME = "<test_video_filename>.mp4"
+VIDEO_ANALYSIS_TEST_VIDEO_FILENAME = "badger-stock-video.mp4"
 
 SECONDARY_RTSP_CAMERA_ADDRESS = "<rtsp_address>"
 SECONDARY_RTSP_CAMERA_NAME = "<rtsp camera name>"
